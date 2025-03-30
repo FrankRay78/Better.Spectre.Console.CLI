@@ -18,6 +18,7 @@
     <PackageIcon>logo.png</PackageIcon>
     <PackageReadmeFile>Better.Spectre.Console.CLI.md</PackageReadmeFile>
     <PackageId>Better.Spectre.Console.CLI</PackageId>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
   <ItemGroup Label="REMOVE THIS">
     <InternalsVisibleTo Include="Better.Spectre.Console.CLI.Tests" />
