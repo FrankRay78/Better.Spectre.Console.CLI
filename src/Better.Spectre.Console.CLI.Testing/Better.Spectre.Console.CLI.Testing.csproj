@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net9.0;net8.0;netstandard2.0</TargetFrameworks>
+    <IsTestProject>false</IsTestProject>
+    <IsPackable>true</IsPackable>
+    <Description>Contains testing utilities for Better.Spectre.Console.CLI.</Description>
+  </PropertyGroup>
+
+  <ItemGroup Label="Project References">
+    <ProjectReference Include="..\Better.Spectre.Console.CLI\Better.Spectre.Console.CLI.csproj" />
+  </ItemGroup>
+
+</Project>

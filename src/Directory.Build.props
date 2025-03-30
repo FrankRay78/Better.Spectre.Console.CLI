@@ -1,0 +1,68 @@
+﻿<Project>
+  <PropertyGroup Label="Settings">
+    <Deterministic>true</Deterministic>
+    <LangVersion>12</LangVersion>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>embedded</DebugType>
+    <MinVerSkip Condition="'$(Configuration)' == 'Debug'">true</MinVerSkip>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <IsPackable>false</IsPackable>
+    <Nullable>enable</Nullable>
+    <NoWarn>$(NoWarn);SA1633</NoWarn>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>$(MSBuildThisFileDirectory)\..\resources\Better.Spectre.Console.CLI.snk</AssemblyOriginatorKeyFile>
+    <PublicKey>002400000480000094000000060200000024000052534131000400000100010039544e066735415f5661d43b44da775fd8301472721565888bbce7ca5834ee91ba21a3746a7a2359e5a30d961cf0696622db7af04688200837e3396952c1bcfd6895cac3206f2b4a28956d31ef58054b0b8f412f0dab8c9f5531344ef3fe838a56cdb667afd69acbb713bd74743d62bbc553a8009762ee7413e54bceb52916c4</PublicKey>
+  </PropertyGroup>
+
+  <PropertyGroup Label="Deterministic Build" Condition="'$(GITHUB_ACTIONS)' == 'true'">
+    <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
+  </PropertyGroup>
+
+  <ItemGroup Condition="$(IsPackable)">
+    <None Include="$(MSBuildThisFileDirectory)../resources/nuget/logo.png">
+      <Pack>true</Pack>
+      <PackagePath>\</PackagePath>
+      <Link>Properties/Package/Logo.png</Link>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)../resources/nuget/$(AssemblyName).md">
+      <Pack>true</Pack>
+      <PackagePath>\README.md</PackagePath>
+      <Link>Properties/Package/README.md</Link>
+    </None>
+  </ItemGroup>
+
+  <PropertyGroup Label="Package Information">
+    <Description>A library that makes it easier to create beautiful console applications.</Description>
+    <Copyright>Patrik Svensson, Phil Scott, Nils Andresen, Cédric Luthi, Frank Ray</Copyright>
+    <Authors>Patrik Svensson, Phil Scott, Nils Andresen, Cédric Luthi, Frank Ray</Authors>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/spectreconsole/spectre.console</RepositoryUrl>
+    <PackageIcon>logo.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <PackageProjectUrl>https://github.com/spectreconsole/spectre.console</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReleaseNotes>https://github.com/spectreconsole/spectre.console/releases</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <PropertyGroup Label="Source Link">
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <AdditionalFiles Include="$(MSBuildThisFileDirectory)/stylecop.json" Link="Properties/stylecop.json"/>
+  </ItemGroup>
+
+  <!-- Allow folks to build with minimal dependencies (though they will need to provide their own Version data) -->
+  <ItemGroup Label="Build Tools Package References" Condition="'$(UseBuildTimeTools)' != 'false'">
+    <PackageReference Include="MinVer" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.SourceLink.GitHub" PrivateAssets="All" />
+    <PackageReference Include="StyleCop.Analyzers">
+      <PrivateAssets>All</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Roslynator.Analyzers">
+      <PrivateAssets>All</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+</Project>
