@@ -27,5 +27,24 @@ For full documentation, refer to the [Spectre.Console](https://github.com/spectr
 <br />
 
 
+## Releases
+
+### Version 1.0.1
+
+Upstream bug fixes not included in the latest official `Spectre.Console.Cli` package:
+
+- Made trimming of `TestConsole` output by `CommandAppTester` user-configurable  
+  *(Upstream Issue: [#1738](https://github.com/spectreconsole/spectre.console/issues/1738), PR: [#1739](https://github.com/spectreconsole/spectre.console/pull/1739))*
+
+- Added support for conditional trimming of trailing periods from argument and option help descriptions  
+  *(Upstream Issue: [#1729](https://github.com/spectreconsole/spectre.console/issues/1729), PR: [#1740](https://github.com/spectreconsole/spectre.console/pull/1740))*
+
+#### Dependencies
+
+- `Spectre.Console` NuGet package: **v0.49.1**
+
+<br />
+
+
 ## License
 Distributed under the MIT license. See `LICENSE` for more information.
