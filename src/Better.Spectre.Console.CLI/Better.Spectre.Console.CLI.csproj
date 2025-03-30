@@ -16,7 +16,7 @@
     <Title>Better.Spectre.Console.CLI</Title>
     <PackageTags>cli;console;dotnet;console-application;command-line-parser;dotnet-cli;cli-parser;command-line-interface;console-development;spectre-console;spectre-console-cli</PackageTags>
     <PackageIcon>logo.png</PackageIcon>
-    <PackageReadmeFile>Spectre.Console.BetterCli.md</PackageReadmeFile>
+    <PackageReadmeFile>Better.Spectre.Console.CLI.md</PackageReadmeFile>
     <PackageId>Better.Spectre.Console.CLI</PackageId>
   </PropertyGroup>
   <ItemGroup Label="REMOVE THIS">
@@ -33,7 +33,7 @@
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
-    <None Include="..\..\resources\nuget\Spectre.Console.BetterCli.md">
+    <None Include="..\..\resources\nuget\Better.Spectre.Console.CLI.md">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
@@ -46,7 +46,6 @@
     </PackageReference>
     <PackageReference Include="Spectre.Console" />
   </ItemGroup>
-
 
   <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0'">
     <PackageReference Include="TunnelVisionLabs.ReferenceAssemblyAnnotator" PrivateAssets="all" />
