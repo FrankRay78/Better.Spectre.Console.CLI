@@ -15,7 +15,7 @@ My personal goal is to complete 15 - 20 enhancements each year, although I remai
 
 ## Features
 
-Better.Spectre.Console.CLI includes the following upstream bug fixes and new features, which Spectre.Console.Cli 0.49.1 does not contain.
+Better.Spectre.Console.CLI includes the following bug fixes and new features, which Spectre.Console.Cli 0.49.1 does not.
 
 Description | Issue | PR
 --- | --- | --- 
