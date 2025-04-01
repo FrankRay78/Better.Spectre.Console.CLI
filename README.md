@@ -38,7 +38,7 @@ dotnet add package Better.Spectre.Console.CLI
 ## Usage
 Replace `Spectre.Console.Cli` with `Better.Spectre.Console.CLI` in your project.
 
-The official [Spectre.Console](https://spectreconsole.net/) website contains extensive documentation.
+The [Spectre.Console](https://spectreconsole.net/) website contains extensive documentation.
 
 <br />
 
