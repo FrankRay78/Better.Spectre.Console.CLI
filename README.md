@@ -1,4 +1,4 @@
-# `Better.Spectre.Console.CLI`
+# Better.Spectre.Console.CLI
 
 A drop-in replacement for Spectre.Console.Cli containing upstream bug fixes and new features.
 
@@ -19,8 +19,8 @@ Better.Spectre.Console.CLI includes the following upstream bug fixes and new fea
 
 Description | Issue | PR
 --- | --- | --- 
-Made trimming of TestConsole output by CommandAppTester user-configurable  | [#1738](https://github.com/spectreconsole/spectre.console/issues/1738) | [#1739](https://github.com/spectreconsole/spectre.console/pull/1739)
-Added support for conditional trimming of trailing periods from argument and option help descriptions | [#1729](https://github.com/spectreconsole/spectre.console/issues/1729) | [#1740](https://github.com/spectreconsole/spectre.console/pull/1740)
+Trimming of TestConsole output by CommandAppTester user-configurable  | [#1738](https://github.com/spectreconsole/spectre.console/issues/1738) | [#1739](https://github.com/spectreconsole/spectre.console/pull/1739)
+Trimming of trailing periods from argument and option help descriptions user-configurable | [#1729](https://github.com/spectreconsole/spectre.console/issues/1729) | [#1740](https://github.com/spectreconsole/spectre.console/pull/1740)
 
 <br />
 
