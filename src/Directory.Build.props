@@ -1,6 +1,6 @@
 ﻿<Project>
   <PropertyGroup Label="Settings">
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
     <Deterministic>true</Deterministic>
     <LangVersion>12</LangVersion>
     <DebugSymbols>true</DebugSymbols>
