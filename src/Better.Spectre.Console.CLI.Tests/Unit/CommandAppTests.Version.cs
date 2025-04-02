@@ -2,7 +2,7 @@ namespace Better.Spectre.Console.CLI.Tests.Unit.Cli;
 
 public sealed partial class CommandAppTests
 {
-    public sealed class Version
+    public sealed partial class Version
     {
         [Theory]
         [InlineData(false)]
