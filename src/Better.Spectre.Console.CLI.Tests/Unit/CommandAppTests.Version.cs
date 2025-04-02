@@ -198,7 +198,7 @@ public sealed partial class CommandAppTests
         {
             // Given
             var fixture = new CommandAppTester();
-            fixture.SetDefaultCommand<Spectre.Console.Tests.Data.VersionCommand>();
+            fixture.SetDefaultCommand<Better.Spectre.Console.CLI.Tests.Data.VersionCommand>();
             fixture.Configure(configurator =>
             {
                 configurator.Settings.StrictParsing = strictParsing;
@@ -225,7 +225,7 @@ public sealed partial class CommandAppTests
             {
                 configurator.Settings.StrictParsing = strictParsing;
                 configurator.SetApplicationVersion("1.0");
-                configurator.AddCommand<Spectre.Console.Tests.Data.VersionCommand>("hello");
+                configurator.AddCommand<Better.Spectre.Console.CLI.Tests.Data.VersionCommand>("hello");
             });
 
             // When
@@ -250,7 +250,7 @@ public sealed partial class CommandAppTests
                 configurator.SetApplicationVersion("1.0");
                 configurator.AddBranch<VersionSettings>("branch", branch =>
                 {
-                    branch.SetDefaultCommand<Spectre.Console.Tests.Data.VersionCommand>();
+                    branch.SetDefaultCommand<Better.Spectre.Console.CLI.Tests.Data.VersionCommand>();
                 });
             });
 
@@ -276,7 +276,7 @@ public sealed partial class CommandAppTests
                 configurator.SetApplicationVersion("1.0");
                 configurator.AddBranch<VersionSettings>("branch", branch =>
                 {
-                    branch.AddCommand<Spectre.Console.Tests.Data.VersionCommand>("hello");
+                    branch.AddCommand<Better.Spectre.Console.CLI.Tests.Data.VersionCommand>("hello");
                 });
             });
 
